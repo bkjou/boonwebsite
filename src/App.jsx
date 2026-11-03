@@ -1,5 +1,6 @@
 import Nav from "./components/Nav.jsx";
 import Hero from "./components/Hero.jsx";
+import Showcase from "./components/Showcase.jsx";
 import Features from "./components/Features.jsx";
 import InboxSection from "./components/InboxSection.jsx";
 import Numbers from "./components/Numbers.jsx";
@@ -15,6 +16,7 @@ export default function App() {
       <Nav />
       <main>
         <Hero />
+        <Showcase />
         <Features />
         <InboxSection />
         <Numbers />

@@ -11,7 +11,7 @@ const seen = new IntersectionObserver((entries) => {
 }, { threshold: 0.1, rootMargin: "0px 0px -40px 0px" });
 function tag() {
   document.querySelectorAll(ANIMATED).forEach((el) => {
-    if (el.dataset.rv || el.parentElement.closest(".card, li, p, h1, h2, h3")) return;
+    if (el.dataset.rv || el.closest(".parallax") || el.parentElement.closest(".card, li, p, h1, h2, h3")) return;
     el.dataset.rv = "1";
     el.classList.add("reveal");
     const i = [...el.parentElement.children].indexOf(el);

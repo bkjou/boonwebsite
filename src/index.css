@@ -31,3 +31,8 @@ body { @apply bg-page font-sans text-ink antialiased; }
 @media (prefers-reduced-motion: reduce) { .float, .fade-in { animation: none } .reveal { opacity: 1; transform: none } }
 .card { transition: box-shadow .25s, transform .3s; }
 .card:hover { box-shadow: 0 20px 40px -20px rgb(15 23 42 / .25); transform: translateY(-4px); }
+@keyframes bob { 0%,100% { transform: translateY(0) } 50% { transform: translateY(-8px) } }
+.bob { animation: bob 5s ease-in-out infinite; }
+.parallax:nth-child(odd) .bob { animation-duration: 6.5s; animation-delay: -2s; }
+.parallax { will-change: transform; }
+@media (prefers-reduced-motion: reduce) { .bob { animation: none } }
