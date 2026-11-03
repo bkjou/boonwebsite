@@ -9,7 +9,7 @@ export default function InboxSection() {
   return (
     <section className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-6">
-        <h2 className="reveal section-title">
+        <h2 className="section-title">
           All in one <span className="text-teal">inbox</span>
         </h2>
         <div className="mt-14 grid items-center gap-16 md:grid-cols-2">
@@ -21,7 +21,7 @@ export default function InboxSection() {
               </li>
             ))}
           </ul>
-          <img src="/img/inbox.jpg" alt="Every channel flowing into one inbox" className="reveal w-full rounded-2xl" />
+          <img src="/img/inbox.jpg" alt="Every channel flowing into one inbox" className="w-full rounded-2xl" />
         </div>
       </div>
     </section>

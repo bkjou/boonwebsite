@@ -27,7 +27,7 @@ export default function UseCases() {
   return (
     <section id="use-cases" className="bg-white py-24">
       <div className="mx-auto max-w-7xl px-6">
-        <h2 className="reveal section-title max-w-4xl">Built for teams like yours</h2>
+        <h2 className="section-title max-w-4xl">Built for teams like yours</h2>
         <div className="mt-10 flex flex-wrap gap-2">
           {Object.keys(CASES).map((name) => (
             <button

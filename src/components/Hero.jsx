@@ -19,7 +19,7 @@ export default function Hero() {
         <p className="mt-12 text-xs text-muted">Supported platforms</p>
         <div className="mt-3 flex flex-wrap gap-2">
           {CHANNELS.map((c) => (
-            <span key={c} className="rounded-full border border-line bg-white px-3 py-1 text-xs text-sub">{c}</span>
+            <span key={c} className="chip rounded-full border border-line bg-white px-3 py-1 text-xs text-sub">{c}</span>
           ))}
         </div>
       </div>
