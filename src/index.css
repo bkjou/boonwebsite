@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* Design tokens measured from the reference site on 2026-11-03 (see docs/plans). */
+@theme {
+  --font-sans: "Inter", Arial, sans-serif;
+  --color-ink: #0f172a;
+  --color-body: #667085;
+  --color-sub: #475466;
+  --color-muted: #98a2b3;
+  --color-teal: #2bb6a3;
+  --color-page: #fafafa;
+  --color-soft: #f5f5f5;
+  --color-line: #d0d5dd;
+}
+
+html { scroll-behavior: smooth; }
+body { @apply bg-page font-sans text-ink antialiased; }
+
+@utility section-title { @apply text-4xl font-semibold tracking-tight md:text-[68px] md:leading-[1.33]; }
+@utility btn { @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition; }
+@utility btn-dark { @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition bg-ink text-white hover:bg-ink/85; }
+@utility btn-light { @apply inline-flex items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition border border-line bg-white/60 text-ink hover:bg-white; }
