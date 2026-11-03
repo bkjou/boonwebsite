@@ -9,7 +9,7 @@ const NUMBERS = [
 export default function Numbers() {
   return (
     <section className="mx-auto max-w-7xl px-6 py-24">
-      <h2 className="section-title max-w-4xl">Busy every day, for real businesses</h2>
+      <h2 className="reveal section-title max-w-4xl">Busy every day, for real businesses</h2>
       <div className="mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
         {NUMBERS.map(([n, label]) => (
           <div key={label}>

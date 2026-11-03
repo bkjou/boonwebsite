@@ -1,4 +1,3 @@
-import ChatMockup from "./ChatMockup.jsx";
 
 const CHANNELS = ["WhatsApp", "Facebook", "Instagram", "Telegram", "Web chat"];
 
@@ -24,7 +23,10 @@ export default function Hero() {
           ))}
         </div>
       </div>
-      <ChatMockup />
+      <div className="relative">
+        <div className="absolute -inset-10 -z-10 rounded-full bg-teal/25 blur-3xl" />
+        <img src="/img/hero.jpg" alt="AI inbox with WhatsApp, Instagram and Facebook chats" className="float w-full rounded-2xl" />
+      </div>
     </section>
   );
 }

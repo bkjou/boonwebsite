@@ -8,7 +8,7 @@ const RESULTS = [
 export default function Results() {
   return (
     <section id="results" className="mx-auto max-w-7xl px-6 py-24">
-      <h2 className="section-title max-w-4xl">Results you can check</h2>
+      <h2 className="reveal section-title max-w-4xl">Results you can check</h2>
       <div className="mt-14 grid gap-6 md:grid-cols-3">
         {RESULTS.map(([head, text]) => (
           <div key={head} className="rounded-2xl border border-line/70 bg-white p-8">
